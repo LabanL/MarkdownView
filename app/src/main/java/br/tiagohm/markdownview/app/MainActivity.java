@@ -1,9 +1,8 @@
 package br.tiagohm.markdownview.app;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import br.tiagohm.markdownview.MarkdownView;
 import br.tiagohm.markdownview.css.InternalStyleSheet;
@@ -13,22 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     private MarkdownView mMarkdownView;
     private InternalStyleSheet mStyle = new Github();
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.change_theme_action:
-                break;
-        }
-
-        return true;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mStyle.addRule("h1", "color: orange");
         mStyle.endMedia();
         mMarkdownView.setBean(myBean);
-        mMarkdownView.loadMarkdownFromAsset("markdown1.md");
+        mMarkdownView.loadMarkdownFromAsset("MarkdownMain.md");
     }
 
     public static class MyBean {

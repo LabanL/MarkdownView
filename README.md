@@ -4,6 +4,13 @@ Android library to display markdown text.
 
 It uses [Flexmark](https://github.com/vsch/flexmark-java) and some of its extensions.
 
+## Fork description
+### App Version 1.0.0(1)
+1. Adapt to Android 14;
+2. Update libraries to newest;
+3. Support opening markdown files;
+4. Support change theme;
+
 ## Setup
 
 Add it in your root build.gradle at the end of repositories:

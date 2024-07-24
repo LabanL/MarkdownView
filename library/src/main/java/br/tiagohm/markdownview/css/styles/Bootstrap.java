@@ -3,7 +3,7 @@ package br.tiagohm.markdownview.css.styles;
 import br.tiagohm.markdownview.css.InternalStyleSheet;
 
 //Bootstrap based CSS
-public abstract class Bootstrap extends InternalStyleSheet {
+public class Bootstrap extends InternalStyleSheet {
     public Bootstrap() {
         addRule("*", "box-sizing: border-box");
         addRule("body", "font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif", "font-size: 14px", "line-height: 1.42857143", "color: #333", "background-color: #fff", "margin: 0");

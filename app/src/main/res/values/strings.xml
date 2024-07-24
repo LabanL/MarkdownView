@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MarkdownView</string>
-    <string name="hello">Hello</string>
+    <string name="app_name" translatable="false">MarkdownView</string>
+    <string name="change_theme" translatable="false">Change Theme</string>
 </resources>
